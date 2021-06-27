@@ -1,4 +1,5 @@
 class Taxi {
+
     constructor(_loaiTaxi, _soKm, _thoiGianCho) {
         this.loaiTaxi = _loaiTaxi;
         this.soKM = _soKm;
@@ -6,6 +7,7 @@ class Taxi {
         this.soKm2 = 0;
         this.soKm3 = 0;
         this.tienThoiGianCho = Number(Math.ceil(this.thoiGianCho / 3));
+        
         switch (_loaiTaxi) {
             case "car":   //value = "car"
                 this.gia1 = 8000;
@@ -39,8 +41,10 @@ class Taxi {
         }
 
     }
+
     tinhTien() {
         return this.tienThoiGianCho * this.giaCho + this.gia1 + this.gia2 * this.soKm2
             + this.gia3 * this.soKm3;
     }
+    
 }

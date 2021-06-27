@@ -22,6 +22,7 @@ buttonInHoaDon.addEventListener("click", ()=>{
     let soKm = $("#soKmSD").value;
     let thoiGianCho = $("#thoiGianCho").value;
     let taxi1 = new Taxi(loaiXe, soKm, thoiGianCho);
+    
     $("#KMDauTien").innerHTML = 1;
     $("#spansoKm2").innerHTML = taxi1.soKm2;
     $("#spansoKm3").innerHTML = taxi1.soKm3;
